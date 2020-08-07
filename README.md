@@ -5,6 +5,9 @@ This will help you to have the right utm tracking across your domain without wai
 
 you should be mindful and have a clear business logic when you are going to override tracking tags. 
 
+Business logic behind this function: 
+1. you have embeded CTA from another platform and don't have access to add tracking parameters to it. 
+2. you want to add tracking tags to global css selector ( like footer, header or signup)
 if you have any ideas or challenges on the GTM triggers tracking, feel free to reach me any time. 
 
 Website: https://mustafaelnagar.com/
