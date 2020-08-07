@@ -1,5 +1,5 @@
 # gtm-custom-ctas-tracking
-This snippet is for digital marketers who trying to solve the issue of adding tracking tags to the CTAs on the funnels through GTM custom tags
+This snippet is for digital marketers who trying to solve the issue of adding tracking tags to the CTAs on the funnels through Google tag manager custom tags
 
 This will help you to have the right utm tracking across your domain without waiting for developers to manually change the CTAs. 
 
