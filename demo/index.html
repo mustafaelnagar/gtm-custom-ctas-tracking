@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/4.1/examples/sticky-footer-navbar/sticky-footer-navbar.css" rel="stylesheet">
+    <!-- basic sticky footercss -->
+  
+
+    <script src="/src/override_ctas.js"></script>
+    <script>
+        function run_update_ctas(){
+        //update 2nd cta and add utm_source=bing to it
+        updateCtas("second_btn","utm_source","bing");
+        //override 3rd cta and update utm_source=bing to utm_source=google
+        updateCtas("third_btn","utm_source","google");
+
+        // add 2 parameters to the 4th CTA 
+        updateCtas("fourth_cta","utm_source","facebook");
+        updateCtas("fourth_cta","utm_campaign","evergreen_jan_2020");
+
+
+        
+        }
+        
+    </script>
+    <title>GTM trigger to override tracking tags</title>
+  </head>
+  <body onload="run_update_ctas()">
+
+    <h1 class="mt-3 pb-2 text-center">GTM trigger to override tracking tags</h1>
+  
+        <div class="container">
+    <div class="row">
+        
+        <div class="cta col-md-3">
+            <div class="cta-inner">
+                
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="btn-inner">
+                <a href="https://mustafaelnagar.com/" class="btn btn-primary" target="_blank">I'm a link without parameters</a>
+            </div>
+        </div>
+        
+        
+        <div class="cta col-md-3">
+            <div class="cta-inner">
+                
+                <i class="fa fa-map-o"></i>
+            </div>
+            <div class="btn-inner">
+                <a href="https://mustafaelnagar.com/" class="btn btn-primary second_btn" target="_blank"> CTA without utms</a>
+            </div>
+        </div>
+        
+        
+        <div class="cta col-md-3">
+            <div class="cta-inner">
+                
+                <i class="fa fa-home"></i>
+            </div>
+            <div class="btn-inner">
+                <a href="https://mustafaelnagar.com/?utm_source=bing" class="btn btn-primary third_btn" target="_blank">CTA with override UTM</a>
+            </div>
+        </div>
+        
+        <div class="cta col-md-3">
+            <div class="cta-inner">
+                
+                <i class="fa fa-user"></i>
+            </div>
+            <div class="btn-inner">
+                <a href="https://mustafaelnagar.com/" class="btn btn-primary fourth_cta" target="_blank">CTA with 2 appended UTMs</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        
+        <div class="cta col-md-12">
+            <h4 class="mt-5 text-center">If you have any questions feel free to contact me anytime</h6>
+            <h2 class="mt-5 text-center"> Website <a href="https://mustafaelnagar.com" target="_blank">mustafaelnagar.com</a> 
+                || Twitter: <a href="https://Twitter.com/mustafa_elnagar" target="_blank">@mustafa_elnagar</a> 
+            </h2>
+            <p></p>
+            </div>
+            </div>
+</div>
+<footer class="footer">
+      <div class="container text-center">
+        <span class="text-muted "> shared with love ❤️ <a href="https://github.com/mustafaelnagar" target="_blank">https://github.com/mustafaelnagar </a></span>
+      </div>
+    </footer>
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
